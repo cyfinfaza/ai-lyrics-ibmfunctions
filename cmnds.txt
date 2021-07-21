@@ -1,0 +1,4 @@
+ibmcloud fn action update ai-lyrics --docker cyfinfaza/ai-lyrics-ibmfunctions stranger.zip
+zip -r stranger.zip __main__.py model-multi
+sudo docker build . -t cyfinfaza/ai-lyrics-ibmfunctions
+sudo docker push cyfinfaza/ai-lyrics-ibmfunctions
